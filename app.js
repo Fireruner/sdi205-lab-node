@@ -2,9 +2,15 @@
 var express = require('express');
 var app = express();
 
+var bodyParser = require('body-parser');
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
+
+
 // Variables
 app.set('port', 8081);
 
+app.use(express.static('public'));
 
 //Rutas/controladores por lógica
 require("./routes/rusuarios.js")(app); // (app, param1, param2, etc.)
