@@ -27,6 +27,14 @@ module.exports = function(app, swig)
 
     });
 
+    app.get('/canciones/agregar', function (req, res) {
+        var respuesta = swig.renderFile('views/bagregar.html', {
+
+        });
+        res.send(respuesta);
+    })
+
+
     app.get('/suma', function(req, res)
     {
         var respuesta = parseInt(req.query.num1) + parseInt(req.query.num2);
