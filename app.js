@@ -23,3 +23,7 @@ app.listen(app.get('port'), function()
 {
     console.log("Servidor activo");
 });
+
+/*
+mongodb://admin:sdi@tiendamusica-shard-00-00-paphl.mongodb.net:27017,tiendamusica-shard-00-01-paphl.mongodb.net:27017,tiendamusica-shard-00-02-paphl.mongodb.net:27017/test?ssl=true&replicaSet=tiendamusica-shard-0&authSource=admin&retryWrites=true
+ */
